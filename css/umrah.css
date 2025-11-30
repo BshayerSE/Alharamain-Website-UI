@@ -1,0 +1,14 @@
+.umrah-image {
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.umrah-link:hover .umrah-image {
+  transform: scale(1.05);
+  opacity: 0.85;
+}

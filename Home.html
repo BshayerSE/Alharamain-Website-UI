@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الهيئة العامة للعناية بشؤون المسجد الحرام والمسجد النبوي</title>
+
+  <!-- Bootstrap RTL -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" />
+
+  <!-- Remix Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" />
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+  <!-- ملفات CSS -->
+  <link rel="stylesheet" href="css/root.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/services.css" />
+  <link rel="stylesheet" href="css/news.css" />
+  <link rel="stylesheet" href="css/memory.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/pattern.css" />
+  <link rel="stylesheet" href="css/gallary.css" />
+  <link rel="stylesheet" href="css/header.css" />
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header class="main-header py-2 shadow-sm bg-white">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center gap-2">
+        <img src="images/logo.svg" alt="شعار الهيئة" style="height: 60px" />
+      </div>
+  
+      <nav class="nav-links d-none d-md-flex align-items-center gap-4">
+        <a href="Home.html" class="nav-link">الرئيسية</a>
+        <a href="#" class="nav-link">عن الهيئة</a>
+        <a href="Al-Masjid_Al-Haram.html" class="nav-link">المسجد الحرام</a>
+        <a href="#" class="nav-link">المسجد النبوي</a>
+        <a href="#" class="nav-link">الخدمات الإلكترونية</a>
+        <a href="#" class="nav-link">المركز الإعلامي</a>
+        <a href="#" class="nav-link">اتصل بنا</a>
+      </nav>
+  
+  
+      <div class="d-flex align-items-center gap-3">
+        <button id="themeToggle" class="btn btn-outline-secondary btn-sm" aria-label="تبديل الوضع">
+          <i class="ri-moon-line" id="themeIcon"></i>
+        </button>
+        <select id="langSelect" class="form-select form-select-sm" aria-label="اختيار اللغة">
+          <option value="ar" selected>العربية</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+<!-- ======= Hero ======= -->
+<section class="hero position-relative py-4 bg-light">
+  <div class="container">
+    <div class="swiper heroSwiper">
+      <div class="swiper-wrapper">
+
+        <!-- شريحة اليوم الوطني -->
+        <div class="swiper-slide">
+          <div class="hero-slide border rounded-4 overflow-hidden shadow-sm position-relative">
+            <img src="images/national_day.png" class="w-100" alt="اليوم الوطني" />
+
+            <!-- النص فوق الصورة -->
+            <div class="national-day-text">
+              <h1>اليوم الوطني السعودي 95</h1>
+              <p>نحتفي بمرور 95 عامًا من العز والفخر لوطننا</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- شريحة المسجد الحرام -->
+        <div class="swiper-slide">
+          <div class="hero-slide border rounded-4 overflow-hidden shadow-sm position-relative">
+            <img src="images/hero1.webp" class="w-100" alt="المسجد الحرام" />
+
+            <div class="overlay"></div>
+
+            <!-- النص فوق الصورة -->
+            <div class="masjid-text">
+              <h1>المسجد الحرام</h1>
+              <p>
+                في قلب مكة المكرمة، يتجلى المسجد الحرام بالكعبة المشرفة، قبلة المسلمين وأول بيت وضع للناس. 
+                هنا، تتضاعف الصلاة بمئة ألف صلاة، وتبدأ مناسك الحج والعمرة، حيث يجتمع المسلمون من كل فج عميق، 
+                متساوين أمام عظمة الخالق، قاصدين طاعته وابتغاء مرضاته.
+              </p>
+              <a href="Al-Masjid Al-Haram.html" class="masjid-btn">حول المسجد الحرام</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- شريحة المسجد النبوي -->
+        <div class="swiper-slide">
+          <div class="hero-slide border rounded-4 overflow-hidden shadow-sm position-relative">
+            <img src="images/hero2.webp" class="w-100" alt="المسجد النبوي" />
+
+            <div class="overlay"></div>
+
+            <!-- النص فوق الصورة -->
+            <div class="masjid-text">
+              <h1>المسجد النبوي</h1>
+              <p>
+                في المدينة المنورة، يسمو المسجد النبوي بعبق الرسالة المحمدية وأثر النبوة الخالدة، حيث تهوي إليه القلوب شوقًا لزيارة النبي ﷺ والسلام عليه، والتأمل في معالمه التاريخية واستشعار أحداث النبوة وقصصها العطرة.
+              </p>
+              <a href="#" class="masjid-btn">حول المسجد النبوي</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- pattern  -->
+<div class="decorative-pattern">
+  <img src="images/first-pattern-l.svg" alt="pattern ">
+</div>
+
+
+  <!-- ======= تبويبات (خدمات الزوار / خدمات الطلاب) ======= -->
+  <div class="service-tabs" role="tablist" aria-label="تبويبات الخدمات">
+    <div class="service-tab active" data-target="visitorsServices" role="tab" aria-selected="true">خدمات الزوار</div>
+    <div class="service-tab" data-target="studentsServices" role="tab" aria-selected="false">خدمات الطلاب</div>
+  </div>
+
+<section class="discover py-4 bg-light">
+  <div class="container">
+
+    <!-- قسم الزوار -->
+    <div id="visitorsServices" class="services-block">
+      <h2 class="section-title mb-4 text-center">اكتشف خدماتنا</h2>
+      <div class="row g-4 justify-content-center">
+
+        <!-- card 1 -->
+        <div class="col-md-4">
+          <details class="service-expandable">
+            <summary>
+              منصة التنقل الموحدة
+              <i class="ri-arrow-down-s-line"></i>
+            </summary>
+            <div class="expand-card-content">
+              <div class="tags">
+                <img src="images/mkh.png" alt="وسم" class="tag-icon">
+              </div>
+              <p>
+                منصة إلكترونية تتيح لضيوف الرحمن خاصة كبار السن وذوي الإعاقة تنظيم حجوزاتهم لرحلات التنقل داخل الحرمين...
+              </p>
+              <div class="buttons">
+                <a href="#" class="btn btn-start">بدء الخدمة</a>
+                <a href="#" class="btn btn-details">تفاصيل الخدمة</a>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- card 2 -->
+        <div class="col-md-4">
+          <details class="service-expandable">
+            <summary>
+              مركز ضيافة الأطفال
+              <i class="ri-arrow-down-s-line"></i>
+            </summary>
+            <div class="expand-card-content">
+              <div class="tags">
+                <img src="images/mkh.png" alt="وسم" class="tag-icon">
+                <img src="images/mdh.png" alt="وسم" class="tag-icon">
+              </div>
+              <p>
+                خدمة إلكترونية تقدم خدمات الرعاية لأطفال الزوار والمصلين، بهدف توفير بيئة آمنة ومريحة لهم، وتمكين ذويهم من زيا...
+              </p>
+              <div class="buttons">
+                <a href="#" class="btn btn-start">بدء الخدمة</a>
+                <a href="#" class="btn btn-details">تفاصيل الخدمة</a>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- card 3 -->
+        <div class="col-md-4">
+          <details class="service-expandable">
+            <summary>
+              دليل المصلي
+              <i class="ri-arrow-down-s-line"></i>
+            </summary>
+            <div class="expand-card-content">
+              <div class="tags">
+                <img src="images/mkh.png" alt="وسم" class="tag-icon">
+                <img src="images/mdh.png" alt="وسم" class="tag-icon">
+              </div>
+              <p>
+                خدمة إلكترونية إثرائية تتيح للمصلي تصفح وقراءة العلم الشرعي والعمل به ، كالأدعية والاذكار والمصحف الشريف...
+              </p>
+              <div class="buttons">
+                <a href="#" class="btn btn-start">بدء الخدمة</a>
+                <a href="#" class="btn btn-details">تفاصيل الخدمة</a>
+              </div>
+            </div>
+          </details>
+        </div>
+
+      </div>
+    </div>
+    <!-- قسم الطلاب -->
+<div id="studentsServices" class="services-block" style="display: none;">
+  <h2 class="section-title mb-4 text-center">اكتشف خدماتنا</h2>
+  <div class="row g-4 justify-content-center">
+
+    <!-- card 1 -->
+    <div class="col-md-4">
+      <details class="service-expandable">
+        <summary>
+          دخول الطلاب
+          <i class="ri-arrow-down-s-line"></i>
+        </summary>
+        <div class="expand-card-content">
+          <div class="tags">
+            <img src="images/mdh.png" alt="وسم" class="tag-icon">
+          </div>
+          <p>
+            خدمة إلكترونية تتيح للطلاب الوصول إلى جميع الخدمات الإلكترونية الخاصة بهم، مما يسهل عليهم الاستفادة من مختلف...
+          </p>
+          <div class="buttons">
+            <a href="#" class="btn btn-start">بدء الخدمة</a>
+            <a href="#" class="btn btn-details">تفاصيل الخدمة</a>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+<!-- pattern  -->
+<div class="decorative-pattern">
+  <img src="images/second-pattern-l.svg" alt="pattern ">
+</div>
+
+<!-- news.html -->
+<section class="news-section py-5">
+  <div class="container">
+    <h2 class="section-title mb-4 text-center">آخر الأخبار</h2>
+
+    <!-- Swiper Container -->
+    <div class="swiper newsSwiper">
+      <div class="swiper-wrapper">
+
+        <!-- خبر 1 -->
+        <div class="swiper-slide">
+          <article class="news-card">
+            <img src="images/news1.jpeg" alt="إحصائية عدد زوار الحرمين">
+            <div class="news-content">
+              <h5>الهيئة العامة للعناية بشؤون الحرمين تعلن إحصائية عدد زوار الحرمين </h5>
+              <p>أعلنت الهيئة العامة للعناية بشؤون الحرمين الشريفين أن إجمالي عدد زوار الحرمين الشريفين خلال الفترة من 27 ربيع الأول إلى 3 ربيع الآخر 1447هـ بلغ...</p>
+              <a href="#" class="read-more-news-btn">اقرأ المزيد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- خبر 2 -->
+        <div class="swiper-slide">
+          <article class="news-card">
+            <img src="images/news2.jpg" alt="خدمات نوعية">
+            <div class="news-content">
+              <h5>الحرمين الشريفين.. خدمات نوعية تعكس مسيرة الإنجاز في اليوم الوطني</h5>
+              <p>في مناسبة اليوم الوطني للمملكة العربية السعودية تستعرض الهيئة العامة للعناية بشؤون المسجد الحرام والمسجد النبوي جملة من الخدمات النوعية التي تعكس...</p>
+              <a href="#" class="read-more-news-btn">اقرأ المزيد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- خبر 3 -->
+        <div class="swiper-slide">
+          <article class="news-card">
+            <img src="images/news3.jpg" alt="الرواق السعودي ">
+            <div class="news-content">
+              <h5>الرواق السعودي.. نقلة نوعية في عمارة المسجد الحرام</h5>
+              <p>يمثل الرواق السعودي أحد أبرز شواهد عناية المملكة العربية السعودية بالمسجد الحرام ومفخرة من مفاخر العمارة الإسلامية الحديثة حيث جاء...</p>
+              <a href="#" class="read-more-news-btn">اقرأ المزيد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- خبر 4 -->
+        <div class="swiper-slide">
+          <article class="news-card">
+            <img src="images/news4.jpg" alt="احصائية زوار الحرمين">
+            <div class="news-content">
+              <h5>12.4 مليون زائر للحرمين الشريفين في أسبوع واحد</h5>
+              <p>سجّلت الهيئة العامة للعناية بشؤون المسجد الحرام والمسجد النبوي إحصائية أعداد زوّار الحرمين الشريفين حيث...</p>
+              <a href="#" class="read-more-news-btn">اقرأ المزيد</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+      <!-- أزرار التنقل المخصصة لسوايبر الأخبار -->
+      <div class="swiper-button-prev news-prev"></div>
+      <div class="swiper-button-next news-next"></div>
+    </div>
+  </div>
+</section>
+
+<!-- pattern  -->
+<div class="decorative-pattern">
+  <img src="images/second-pattern-l.svg" alt="pattern ">
+</div>
+
+<!-- ذاكرة الحرمين -->
+<section class="memory py-4 bg-light">
+  <div class="container">
+    <h2 class="section-title mb-4 text-center">ذاكرة الحرمين</h2>
+
+    <!-- Swiper للصور -->
+    <div class="swiper memory-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/memory1.jpg" alt="memory 1" class="memory-img"></div>
+        <div class="swiper-slide"><img src="images/memory2.jpg" alt="memory 2" class="memory-img"></div>
+        <div class="swiper-slide"><img src="images/memory3.jpg" alt="memory 3" class="memory-img"></div>
+        <div class="swiper-slide"><img src="images/memory4.jpg" alt="memory 4" class="memory-img"></div>
+      </div>
+
+      <!-- أسهم التنقل -->
+      <div class="swiper-button-next memory-button-next"></div>
+      <div class="swiper-button-prev memory-button-prev"></div>
+    </div>
+
+    <!-- زر مكتبة الصور -->
+    <div class="text-end mt-3">
+      <a href="gallery.html" class="gold-btn-gallery">
+        مكتبة الصور
+        <i class="ri-arrow-left-s-line"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <div class="swiper lightbox-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/memory1.jpg" alt="memory 1"></div>
+      <div class="swiper-slide"><img src="images/memory2.jpg" alt="memory 2"></div>
+      <div class="swiper-slide"><img src="images/memory3.jpg" alt="memory 3"></div>
+      <div class="swiper-slide"><img src="images/memory4.jpg" alt="memory 4"></div>
+    </div>
+    <div class="swiper-button-next lightbox-button-next"></div>
+    <div class="swiper-button-prev lightbox-button-prev"></div>
+  </div>
+</div>
+
+<!-- pattern  -->
+<div class="decorative-pattern">
+  <img src="images/fourth-pattern-l.svg" alt="pattern ">
+</div>
+
+
+<!-- ======= Footer ======= -->
+<footer class="footer text-light" dir="rtl">
+  <div class="footer-top">
+    <div class="container footer-container">
+      
+      <!-- العمود 1 -->
+      <div class="footer-column">
+        <h5>عن الهيئة</h5>
+        <span class="gold-line"></span>
+        <ul class="link-list">
+          <li><a href="#">نبذة عن الهيئة</a></li>
+          <li><a href="#">كلمة معالي رئيس مجلس الإدارة</a></li>
+          <li><a href="#">الهيكل التنظيمي التشغيلي</a></li>
+          <li><a href="#">التوظيف</a></li>
+          <li><a href="#">إتاحة البيانات</a></li>
+          <li><a href="#">السياسات</a></li>
+          <li><a href="#">الأسئلة الشائعة</a></li>
+          <li><a href="#">المشاركة الإلكترونية</a></li>
+        </ul>
+      </div>
+
+      <!-- العمود 2 -->
+      <div class="footer-column">
+        <h5>روابط مهمة</h5>
+        <span class="gold-line"></span>
+        <ul class="link-list">
+          <li><a href="#">رؤية 2030</a></li>
+          <li><a href="#">نسك</a></li>
+          <li><a href="#">وزارة الحج والعمرة</a></li>
+          <li><a href="#">برنامج خدمة ضيوف الرحمن</a></li>
+          <li><a href="#">المنصة الوطنية الموحدة</a></li>
+          <li><a href="#">البوابة الوطنية للبيانات المفتوحة</a></li>
+          <li><a href="#">منصة المشاركة المجتمعية (تفاعل)</a></li>
+        </ul>
+      </div>
+
+      <!-- العمود 3 -->
+      <div class="footer-column">
+        <h5>روابط أكاديمية</h5>
+        <span class="gold-line"></span>
+        <ul class="link-list">
+          <li><a href="#">كلية المسجد الحرام</a></li>
+          <li><a href="#">معهد المسجد الحرام</a></li>
+          <li><a href="#">كلية المسجد النبوي</a></li>
+          <li><a href="#">معهد المسجد النبوي</a></li>
+        </ul>
+      </div>
+
+      <!-- العمود 4 -->
+      <div class="footer-column">
+        <h5>تواصل معنا</h5>
+        <span class="gold-line"></span>
+        <ul class="link-list">
+          <li><a href="#">الرقم الموحد 1966</a></li>
+          <li><a href="#">اتصل بنا</a></li>
+          <li><a href="#">العناية بضيوف الحرمين</a></li>
+        </ul>
+        <h6 class="mt-3">تابعنا على</h6>
+        <span class="gold-line small"></span>
+        <ul class="social-links">
+          <li><a href="#" aria-label="تيك توك"><i class="ri-tiktok-line"></i></a></li>
+          <li><a href="#" aria-label="لينكدإن"><i class="ri-linkedin-line"></i></a></li>
+          <li><a href="#" aria-label="يوتيوب"><i class="ri-youtube-line"></i></a></li>
+          <li><a href="#" aria-label="تويتر"><i class="ri-twitter-line"></i></a></li>
+          <li><a href="#" aria-label="واتساب"><i class="ri-whatsapp-line"></i></a></li>
+          <li><a href="#" aria-label="سناب"><i class="ri-snapchat-line"></i></a></li>
+          <li><a href="#" aria-label="انستغرام"><i class="ri-instagram-line"></i></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom container">
+      <p class="rights">
+        جميع الحقوق محفوظة الهيئة العامة للعناية بشؤون المسجد الحرام والمسجد النبوي © 2025
+      </p>
+      <div class="logos-left">
+        <img src="images/logo.svg" alt="شعار الهيئة" class="footer-logo">
+        <img src="images/N95_Logo.svg" alt="اليوم الوطني" class="footer-logo">
+      </div>
+    </div>
+  </div>
+
+  <!-- الزخرفة السفلية -->
+  <div class="footer-pattern">
+    <img src="images/pattern3.png" alt="decoration3">
+    <img src="images/pattern3.png" alt="decoration3">
+  </div>
+</footer>
+
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/memory.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/news.js"></script>
+  <script src="js/activepage.js"></script>
+  <script src="js/breadcrumb.js"></script>
+</body>
+</html>

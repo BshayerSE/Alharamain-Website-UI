@@ -1,0 +1,16 @@
+/* القائمة العلوية */
+.nav-links .nav-link {
+  color: #000;      
+  font-weight: 400;    
+  transition: color 0.3s ease;
+}
+
+.nav-links .nav-link:hover {
+  color: #bb9661;         
+}
+
+/* الرابط النشط */
+.nav-links .nav-link.active {
+  color: #bb9661;
+  font-weight: 700 !important;
+}

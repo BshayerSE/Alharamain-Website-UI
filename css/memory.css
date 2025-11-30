@@ -1,0 +1,134 @@
+.memory {
+  direction: rtl;
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+  margin-bottom: 16px;
+}
+
+.memory-section-top-space {
+  margin-top: 16px;
+}
+
+.memory::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      rgba(47, 45, 45, 0.9),
+      rgba(100, 100, 100, 0.7)
+    ),
+    url("../images/memory-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.memory .container,
+.memory .swiper,
+.memory .section-title {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.memory .section-title {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Swiper */
+.memory-swiper {
+  width: 100%;
+  max-width: 700px; 
+  margin: 0 auto;
+  position: relative;
+}
+
+.memory-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.memory-swiper .swiper-slide img {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.lightbox-swiper .swiper-slide img {
+  max-width: 90%;
+  max-height: 80vh;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.memory-button-next,
+.memory-button-prev,
+.lightbox-button-next,
+.lightbox-button-prev {
+  color: var(--dark-gray);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 48px; 
+  height: 48px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.memory-button-next::after,
+.lightbox-button-next::after {
+  font-size: 20px;
+  font-weight: bold;
+  color: #bb9661;
+}
+
+.memory-button-prev::after,
+.lightbox-button-prev::after {
+  font-size: 20px;
+  font-weight: bold;
+  color: #bb9661;
+}
+
+.memory-button-prev:hover,
+.memory-button-next:hover,
+.lightbox-button-prev:hover
+.lightbox-button-next:hover {
+  background: rgba(123, 138, 148, 0.4);
+  color: #fff;
+}
+.memory-button-next { right: 10px; }
+.memory-button-prev { left: 10px; }
+.lightbox-button-next { right: 20px; }
+.lightbox-button-prev { left: 20px; }

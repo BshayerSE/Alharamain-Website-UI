@@ -1,0 +1,143 @@
+.service-tabs {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  padding: 12px 2%;
+  align-items: center;
+}
+
+.service-tab {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  padding: 10px 25px;
+  align-items: center;
+  border-radius: 10px;
+  border: 1.5px solid #bb9661;
+  background: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+  color: var(--dark-gray);
+}
+
+.service-tab.active {
+  background: #bb9661;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(0,102,84,0.12);
+}
+
+.service-tab:hover {
+   transform: translateY(-2px);
+   color: #006654;
+      
+}
+
+/* ======= Expandable Services ======= */
+.service-expandable {
+  box-sizing: border-box;
+  width: 100%;              
+  max-width: 350px;         
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #bb9661;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+  justify-content: center;  
+  text-align: center;       
+  gap: 16px;                
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.service-expandable:hover {
+  transform: translateY(-6px); 
+  box-shadow: 0 6px 18px rgba(187, 150, 97, 0.2); 
+  border-color: rgba(187, 150, 97, 0.8); 
+}
+
+.service-expandable summary {
+  list-style: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #000; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-expandable summary::-webkit-details-marker {
+  display: none;
+}
+
+.service-expandable[open] {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  border-color: #bb9661;
+}
+
+.expand-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  text-align: right;
+}
+
+.expand-card-content p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.tags {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.tag-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  object-fit: cover;
+   border: 1px solid #bb9661;  
+ }
+
+
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.btn-start {
+  background-color: #bb9661;   
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-start:hover {
+  background-color: #a8834f;   
+}
+
+.btn-details {
+  border: 1px solid #bb9661;   
+  color: #000;              
+  background: transparent;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-details:hover {
+  background-color: rgba(187, 150, 97, 0.8); 
+  color: #fff;                 
+}
