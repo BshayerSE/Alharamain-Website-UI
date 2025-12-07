@@ -1,0 +1,157 @@
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: #fff;
+  border-bottom: 0.125rem solid #d2d6db; /* 2px */
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links .nav-link {
+  color: #161616;
+  font-weight: 400;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  height: 4.5rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  transition: color 0.3s ease, background 0.3s ease, font-weight 0.3s ease;
+}
+
+.nav-links .nav-link:hover {
+  color: #bb9661;
+  background: #d0d8dd;
+}
+
+.nav-links .nav-link.active {
+  color: #bb9661;
+  font-weight: 700;
+}
+
+
+.nav-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+
+.header-action {
+  font-size: 1rem;
+  color: #161616;
+  min-width: 4.5rem; 
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  padding: 0 0.75rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.header-action:hover {
+  background: #d0d8dd;
+}
+
+.action-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.language-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  display: none;
+  flex-direction: column;
+  min-width: 6rem; 
+  z-index: 1000;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.dropdown-item {
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.9375rem;
+}
+
+.dropdown-item:hover {
+  background: #bb9661;
+  color: #fff;
+}
+
+/*Mobile Menu*/
+.mobile-menu-btn {
+  border: none;
+  background: none;
+  font-size: 1.6875rem;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-top: 0.0625rem solid #eee;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-link {
+  padding: 0.4375rem 0;
+  color: #161616;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.mobile-link:hover {
+  color: #bb9661;
+}
+
+.mobile-link.active {
+  color: #bb9661;
+  font-weight: bold;
+}
+
+@media (max-width: 48rem) {
+  .nav-links {
+    display: none !important;
+  }
+
+  .header-action {
+    min-width: 3.75rem;
+    height: 3.75rem;
+    font-size: 0.875rem;
+  }
+
+  .action-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .mobile-link {
+    font-size: 0.875rem;
+  }
+}

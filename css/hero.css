@@ -1,0 +1,163 @@
+/* ================= HERO SLIDER ================= */
+
+.hero-slide {
+  width: 100%;
+  height: clamp(220px, 40vw, 420px);
+  overflow: hidden;
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(187, 150, 97, 0.3);
+}
+
+.hero-slide img {
+  width: 100%;
+  height: 140%;
+  object-fit: cover;
+  border: 2px solid #bb9661;
+  border-radius: 1rem;
+}
+
+.hero-slide  img {
+  width: 100%;
+  height: 140%;
+  object-fit: cover;
+  border: 2px solid #bb9661;
+  border-radius: 1rem;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15));
+  z-index: 1;
+  border-radius: 1rem;
+}
+
+.hero-wrapper {
+  width: 100%;
+  padding-left: clamp(10px, 4vw, 40px);
+  padding-right: clamp(10px, 4vw, 40px);
+}
+
+/* ================= TEXT STYLES ================= */
+
+.national-day-text,
+.masjid-text,
+.hero-content {
+  position: absolute;
+  bottom: clamp(10px, 5vw, 40px);
+  right: clamp(10px, 5vw, 40px);
+  text-align: right;
+  direction: rtl;
+  max-width: min(80%, 800px);
+  color: #fff;
+  z-index: 2;
+}
+
+/* نص العنوان */
+.national-day-text h1,
+.masjid-text h1,
+.hero-content h1 {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: clamp(32px, 6vw, 60px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin-bottom: 24px; /* مسافة فيقما */
+}
+
+/* نص الفقرة */
+.national-day-text p,
+.masjid-text p,
+.hero-content p {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.6;
+  margin-bottom: 32px; /* مسافة فيقما */
+  color: #fff;
+}
+
+/* زر */
+.masjid-btn,
+.hero-btn {
+  display: inline-block;
+  background-color: #bb9661;
+  color: #fff;
+  padding: clamp(6px, 1vw, 12px) clamp(12px, 2vw, 25px);
+  border-radius: 8px;
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.masjid-btn:hover,
+.hero-btn:hover {
+  background-color: #a8824e;
+  transform: translateY(-2px);
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background-color: #bb9661 !important;
+}
+
+.swiper-pagination-bullet-active {
+  transform: scale(1.3);
+}
+
+:root {
+  --gallery-radius: 10px;
+}
+
+.gallery-hero .hero-slide {
+  height: clamp(120px, 22vw, 160px) !important;
+  border: 3px solid #bb9661;
+  border-radius: var(--gallery-radius);
+}
+
+.gallery-hero .hero-slide img {
+  border-radius: var(--gallery-radius);
+}
+
+.gallery-hero .overlay {
+  background: rgba(0, 0, 0, 0.20);
+  border-radius: var(--gallery-radius);
+}
+
+.gallery-hero .masjid-text {
+  bottom: clamp(5px, 3vw, 20px);
+  right: clamp(10px, 4vw, 30px);
+  white-space: nowrap;
+}
+
+.gallery-hero .masjid-text h1 {
+  font-size: clamp(16px, 4vw, 38px);
+  line-height: 1.1;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+
+.national-day-text h1,
+.masjid-text h1,
+.hero-content h1 {
+  font-size: clamp(28px, 4vw, 50px);
+  margin-bottom: 20px; 
+}
+
+.national-day-text p,
+.masjid-text p,
+.hero-content p {
+  font-size: clamp(10px, 2vw, 18px);
+  line-height: 1;
+  margin-bottom: 22px; 
+  color: #fff;
+}
+.masjid-btn,
+.hero-btn {
+  padding: clamp(4px, 1vw, 9px) clamp(9px, 2vw, 20px);
+  border-radius: 4px;
+  font-size: clamp(10px, 2vw, 13px);
+}
+}

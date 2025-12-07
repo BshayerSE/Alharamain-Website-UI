@@ -1,0 +1,105 @@
+/* normal  */
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* italic */
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+:root {
+  --font-family-primary: 'IBM Plex Sans Arabic';
+
+  /* ألوان الهوية الرسمية */
+  --dark-gray: #25343F;     
+  --gold-sand: #BB9661;     
+  --light-gray-blue: #D0D8DD;
+  --dark-green: #006654;
+
+  /* ألوان ثانوية */
+  --bright-green: #00AE68;
+  --sky-blue: #67AEE1;
+  --brown: #775135;
+  --medium-gray: #7B8A94;
+  --turquoise: #00AFAD;
+  --copper: #BB5A1C;
+
+  /* تدرجات مشتقة */
+  --dark-gray-80: rgba(37, 52, 63, 0.8);
+  --dark-gray-60: rgba(37, 52, 63, 0.6);
+  --gold-sand-80: rgba(187, 150, 97, 0.8);
+
+  /* متغيرات عامة */
+  --bg-main: #ffffff;
+  --bg-card: #F9FAFB;
+  --bg-footer: var(--dark-gray);
+  --color-main: var(--dark-gray);
+  --btn-primary: var(--gold-sand);
+  --btn-hover: var(--dark-green);
+  --border-color: #E0E3E6;
+  --transition: all 0.3s ease;
+}
+
+/* تنسيقات عامة */
+body {
+  font-family: var(--font-family-primary);
+  background-color: var(--bg-main);
+  color: var(--color-main);
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--btn-primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--btn-hover);
+}
+
+.btn {
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background-color: var(--btn-primary);
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-hover);
+  transform: translateY(-2px);
+}
+
+.section-title {
+  color: var(--dark-gray);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
