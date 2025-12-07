@@ -16,7 +16,7 @@ $(document).ready(function(){
   $('.services-slider').each(function(){
     var $slider = $(this);
     var slideCount = $slider.children().length;
-    if(slideCount <= 1) return; // لو كرت واحد فقط، لا تفعل السلايدر
+    if(slideCount <= 1) return;
 
     if(typeof $slider.slick === "function") {
       $slider.slick({
@@ -25,7 +25,7 @@ $(document).ready(function(){
         dots: true,
         arrows: false,
         infinite: false,
-        rtl: $('html').attr('dir') === 'rtl', // يحترم اتجاه الصفحة
+        rtl: $('html').attr('dir') === 'rtl',
         responsive: [
           { breakpoint: 992, settings: { slidesToShow: Math.min(2, slideCount) } },
           { breakpoint: 576, settings: { slidesToShow: 1 } }
