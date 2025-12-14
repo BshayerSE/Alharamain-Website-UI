@@ -14,6 +14,8 @@
   <!-- Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
 
   <!-- ملفات CSS -->
@@ -27,6 +29,7 @@
   <link rel="stylesheet" href="css/pattern.css" />
   <link rel="stylesheet" href="css/otherTabs.css" />
   <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/manasik.css" />
 </head>
 
 <body>
@@ -52,7 +55,7 @@
         المسجد الحرام
         <img src="icons/chevron.svg" alt="chevron" class="nav-icon" />
       </a>
-      <a href="#" class="nav-link">
+      <a href="Al-Masjid_Al-Nabawi.html" class="nav-link">
         المسجد النبوي
         <img src="icons/chevron.svg" alt="chevron" class="nav-icon" />
       </a>
@@ -103,7 +106,7 @@
       <a href="index.html" class="mobile-link">الرئيسية</a>
       <a href="#" class="mobile-link">عن الهيئة</a>
       <a href="Al-Masjid_Al-Haram.html" class="mobile-link">المسجد الحرام</a>
-      <a href="#" class="mobile-link">المسجد النبوي</a>
+      <a href="Al-Masjid_Al-Nabawi.html" class="mobile-link">المسجد النبوي</a>
       <a href="#" class="mobile-link">الخدمات الإلكترونية</a>
       <a href="#" class="mobile-link">المركز الإعلامي</a>
       <a href="#" class="mobile-link">اتصل بنا</a>
@@ -132,23 +135,23 @@
 </section>
 
 <!-- ======= Tabs ======= -->
-<div class="service-tabs" role="tablist" aria-label="تبويبات معالم الحرم">
-  <div class="service-tab active" data-target="kaabaLandmarks" role="tab" aria-selected="true">
+<div class="other-tabs-wrapper" role="tablist" aria-label="تبويبات معالم الحرم">
+  <div class="other-tab active" data-target="kaabaLandmarks" role="tab" aria-selected="true">
     معالم الكعبة المشرفة
   </div>
-  <div class="service-tab" data-target="maqamIbrahim" role="tab" aria-selected="false">
+  <div class="other-tab" data-target="maqamIbrahim" role="tab" aria-selected="false">
     مقام إبراهيم
   </div>
-  <div class="service-tab" data-target="mataf" role="tab" aria-selected="false">
+  <div class="other-tab" data-target="mataf" role="tab" aria-selected="false">
     المطاف
   </div>
-  <div class="service-tab" data-target="masaa" role="tab" aria-selected="false">
+  <div class="other-tab" data-target="masaa" role="tab" aria-selected="false">
     المسعى
   </div>
 </div>
 
 <!-- ======= معالم الكعبة المشرفة ======= -->
-<section class="services-block active" id="kaabaLandmarks" style="display: block;">
+<section class="other-services active" id="kaabaLandmarks" style="display: block;">
   <div class="container-fluid px-0 position-relative">
     <h2 class="section-title mb-4 text-center">معالم الكعبة المشرفة</h2>
 
@@ -160,8 +163,8 @@
         <div class="swiper-slide">
           <article class="kaaba-card">
             <img src="images/kaaba.webp" alt=" الكعبة المشرفة">
+            <h2 class="section-title mb-0 text-center pt-3">الكعبة الشريفة</h2>
             <div class="kaaba-content">
-              <h5>الكعبة المشرفة</h5>
               <p>في قلب مكة المكرمة، حيث يلتقي الخشوع بالجلال، تقف الكعبة المشرفة شامخة، شاهدة على تاريخ الإيمان ومهوى أفئدة المؤمنين. هي أول بيت وضع للناس لعبادة الله الواحد الأحد.</p>
               <a href="#" class="read-more-btn">اقرأ المزيد</a>
             </div>
@@ -172,8 +175,8 @@
         <div class="swiper-slide">
           <article class="kaaba-card">
             <img src="images/mizap.webp" alt="الميزاب">
+            <h2 class="section-title mb-0 text-center pt-3">الميزاب</h2>
             <div class="kaaba-content">
-              <h5>الميزاب</h5>
               <p>ميزاب الكعبة المشرفة هو الجزء المثبت على سطح الكعبة في الجهة الشمالية، الممتد نحو الحِجْر، والمخصص لتصريف المياه المتجمعة على سطح الكعبة عند سقوط الأمطار أو غسل السطح إلى الحِجْر.</p>
               <a href="#" class="read-more-btn">اقرأ المزيد</a>
             </div>
@@ -184,8 +187,8 @@
         <div class="swiper-slide">
           <article class="kaaba-card">
             <img src="images/mul.webp" alt="الملتزم">
+            <h2 class="section-title mb-0 text-center pt-3">الملتزم</h2>
             <div class="kaaba-content">
-              <h5>الملتزم</h5>
               <p>الملتزم هو مكان الالتزام من الكعبة فيما بين الحجر الأسود وباب الكعبة المشرفة، وسمي بالملتزم لأن الناس يلزمونه ويدعون الله عنده</p>
               <a href="#" class="read-more-btn">اقرأ المزيد</a>
             </div>
@@ -196,8 +199,8 @@
         <div class="swiper-slide">
           <article class="kaaba-card">
             <img src="images/hijr.webp" alt="الحجر">
+            <h2 class="section-title mb-0 text-center pt-3">الحجر</h2>
             <div class="kaaba-content">
-              <h5>الحجر</h5>
               <p>هو الحائط الواقع شمال الكعبة المشرَّفة على شكل نصف دائرة. قيل عندما قامت قريش بإعادة بناء الكعبة تركت جزءًا من أساس إبراهيم عليه السلام خارج البنيان، فحجرت عليه ليُعرف أنه جزء من الكعبة.</p>
               <a href="#" class="read-more-btn">اقرأ المزيد</a>
             </div>
@@ -216,11 +219,12 @@
 <!-- مقام إبراهيم -->
 <section class="other-services" id="maqamIbrahim" style="display: none;">
   <div class="container">
-    <h2 class="section-title mb-4 text-center">مقام إبراهيم</h2>
     <div class="other-services-card">
       <img src="images/maqam.webp" alt="مقام إبراهيم">
+      <h2 class="section-title mb-0 pt-3 text-center">مقام إبراهيم</h2>
       <div class="other-services-content">
         <p>مقام إبراهيم عليه السلام هو الحجر الأثري الذي وقف عليه النبي إبراهيم، حينما كان يبني الكعبة مع ابنه إسماعيل عليهما السلام. وعندما ارتفعت جدران الكعبة، استعان إبراهيم بمقامه ليقف عليه أثناء البناء، وقد ظهرت آثار قدميه في الحجر، مما جعله علامة تاريخية فارقة.</p>
+      <a href="#" class="read-more-btn">اقرأ المزيد</a>
       </div>
     </div>
   </div>
@@ -229,11 +233,12 @@
 <!-- المطاف -->
 <section class="other-services" id="mataf" style="display: none;">
   <div class="container">
-    <h2 class="section-title mb-4 text-center">المطاف</h2>
     <div class="other-services-card">
       <img src="images/tawaf.webp" alt="المطاف">
+      <h2 class="section-title mb-0 pt-3 text-center">المطاف</h2>
       <div class="other-services-content">
         <p>المطاف، تلك الساحة البيضاء المكسوة بالرخام النقي التي تحيط بالكعبة المشرفة، يعرف اليوم بـ "الصحن"، وهو قلب المسجد الحرام النابض بالحياة والروحانية.</p>
+      <a href="#" class="read-more-btn">اقرأ المزيد</a>
       </div>
     </div>
   </div>
@@ -242,11 +247,12 @@
 <!-- المسعى -->
 <section class="other-services" id="masaa" style="display: none;">
   <div class="container">
-    <h2 class="section-title mb-4 text-center">المسعى</h2>
     <div class="other-services-card">
       <img src="images/saai.webp" alt="المسعى">
+      <h2 class="section-title mb-0 pt-3 text-center">المطاف</h2>
       <div class="other-services-content">
         <p>الصفا والمروة هما جبلان صغيران يحيطان بالمسجد الحرام، حيث يبدأ السعي من الصفا وينتهي بالمروة على مدار سبعة أشواط.</p>
+      <a href="#" class="read-more-btn">اقرأ المزيد</a>
       </div>
     </div>
   </div>
@@ -298,7 +304,7 @@
             <!-- card 2 -->
             <div class="swiper-slide">
               <article class="efforts-card">
-                <img src="images/carpet.webp" alt="سجاد المسجد الحرام">
+                <img src="images/carpet.jpg" alt="سجاد المسجد الحرام">
                 <div class="efforts-content">
                   <h5>سجاد المسجد الحرام</h5>
                   <p>ما بين نسج الصوف وأحدث تقنيات العناية، يكمن عالم من الحرفية والدقة التي تعكس تقديرًا لا يُضاهى لضيوف الرحمن. في أروقة المسجد الحرام، يتحول السجاد إلى لوحة فنية تلامس الروح وتنثر الراحة في كل خطوة.</p>
@@ -322,7 +328,7 @@
             <!-- card 4 -->
             <div class="swiper-slide">
               <article class="efforts-card">
-                <img src="images/coolsys.webp" alt="منظومة التبريد في المسجد الحرام">
+                <img src="images/coolsys.jpg" alt="منظومة التبريد في المسجد الحرام">
                 <div class="efforts-content">
                   <h5>منظومة التبريد في المسجد الحرام"</h5>
                   <p>ما بين نسيم الرحمة وهندسة التبريد المتقنة، يكمن عالم من العناية الهادئة التي تعكس حرصًا لا يُضاهى على راحة ضيوف الرحمن. في رحاب الحرمين الشريفين، يتحول الهواء إلى نسمة رحمة تبث السكينة في قلوب الزوار.</p>
@@ -343,14 +349,14 @@
 </div>
 
 <!-- ======= صفة العمرة ======= -->
-<section class="umrah py-5 bg-white">
+<section class="manasik py-5 bg-white">
   <div class="container text-center">
     <h2 class="section-title mb-4">صفة العمرة</h2>
 
-    <a href="#" target="_blank" class="umrah-link d-block w-100">
+    <a href="#" target="_blank" class="manasik-link d-block w-100">
       <img src="images/mk_vid.webp" 
            alt="فيديو توضيحي للعمرة" 
-           class="umrah-image mb-4 w-100" />
+           class="manasik-image mb-4" />
     </a>
   </div>
 </section>
@@ -363,28 +369,33 @@
 <!-- ======= قسم مكتبة المسجد الحرام ======= -->
 <section class="library-section py-5">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row align-items-center g-0"> <!-- g-0 لإزالة المسافات -->
 
-      <!-- العمود الايمن (النص -->
-      <div class="col-md-6 library-text">
-        <h2 class="section-title mb-3">مكتبة المسجد الحرام</h2>
-        <p class="library-description mb-4">
-          مكتبة المسجد الحرام، معلم بارز في قلب مكة المكرمة، يضم بين جدرانه إرثًا ثقافيًا عظيمًا
-          ويسعى لتقديمه بأحدث الوسائل لإثراء تجربة زائري أطهر بقاع الأرض.
-        </p>
-        <div class="library-btn-wrapper">
-          <a href="#" class="library-btn">مكتبة المسجد الحرام</a>
+      <!-- العمود الأيمن (النص) -->
+      <div class="col-md-6">
+        <div class="library-text-box">
+          <h2 class="section-title mb-3">مكتبة المسجد الحرام</h2>
+
+          <p class="library-description mb-4">
+            مكتبة المسجد الحرام، معلم بارز في قلب مكة المكرمة، يضم بين جدرانه إرثًا ثقافيًا عظيمًا
+            ويسعى لتقديمه بأحدث الوسائل لإثراء تجربة زائري أطهر بقاع الأرض.
+          </p>
+
+          <div class="library-btn-wrapper">
+            <a href="#" class="library-btn">مكتبة المسجد الحرام</a>
+          </div>
         </div>
       </div>
 
-      <!-- (العمود الايسر (الصورة -->
+      <!-- العمود الأيسر (الصورة) -->
       <div class="col-md-6 text-center">
-        <img src="images/mk_lib.webp" alt="مكتبة المسجد الحرام" class="library-image img-fluid">
+        <img src="images/mk_lib.webp" alt="مكتبة المسجد الحرام" class="library-image">
       </div>
 
     </div>
   </div>
 </section>
+
 
 <!-- pattern  -->
 <div class="decorative-pattern">
@@ -392,22 +403,26 @@
 </div>
 
 
-<!-- ======= قسم خدمات المسجد الحرام ======= -->
 <section class="discover py-4 bg-light">
   <div class="container">
+
+    <div class="services-block">
       <h2 class="section-title mb-4 text-center">خدمات المسجد الحرام</h2>
-      <div class="row g-4 justify-content-center">
+      
+      <div class="row g-4 justify-content-center services-slider">
 
         <!-- card 1 -->
         <div class="col-md-4">
           <details class="service-expandable">
             <summary>
+              <img src="images/decor.svg" class="card-decor" alt="decor">
+              <img src="images/Makkah_icon.svg" alt="وسم" class="tag-icon">
               وليطوفوا
               <i class="ri-arrow-down-s-line"></i>
             </summary>
             <div class="expand-card-content">
               <div class="tags">
-                <img src="images/mkh.png" alt="وسم" class="tag-icon">
+                <img src="images/Makkah_icon.svg" alt="وسم" class="tag-icon">
               </div>
               <p>
                 خدمة إلكترونية متاحة عبر التطبيق، تتيح للحجاج والمعتمرين اختيار مطوف أو مرشد لمساعدتهم في أداء مناسك...
@@ -424,12 +439,14 @@
         <div class="col-md-4">
           <details class="service-expandable">
             <summary>
-            طلب الالتحاق بكلية المسجد الحرام  
+              <img src="images/decor.svg" class="card-decor" alt="decor">
+              <img src="images/Makkah_icon.svg" alt="وسم" class="tag-icon">
+              طلب الالتحاق بكلية المسجد الحرام  
               <i class="ri-arrow-down-s-line"></i>
             </summary>
             <div class="expand-card-content">
               <div class="tags">
-                <img src="images/mkh.png" alt="وسم" class="tag-icon">
+                <img src="images/Makkah_icon.svg" alt="وسم" class="tag-icon">
               </div>
               <p>
                 خدمة إلكترونية تتيح لطلبة العلم الحاصلين على الشهادة الثانوية متابعة دراستهم الجامعية في مختلف التخصصات...
@@ -446,12 +463,14 @@
         <div class="col-md-4">
           <details class="service-expandable">
             <summary>
-            طلب الالتحاق بمعهد المسجد الحرام 
+              <img src="images/decor.svg" class="card-decor" alt="decor">
+              <img src="images/Makkah_icon.svg" alt="وسم" class="tag-icon">
+              طلب الالتحاق بمعهد المسجد الحرام 
               <i class="ri-arrow-down-s-line"></i>
             </summary>
             <div class="expand-card-content">
               <div class="tags">
-                <img src="images/mkh.png" alt="وسم" class="tag-icon">
+                <img src="images/Makkah_icon.svg" alt="وسم" class="tag-icon">
               </div>
               <p>
                خدمة إلكترونية تمكِّن طلبة العلم الحاصلين على شهادة المرحلة الابتدائية من مواصلة دراستهم في العلم الشرعي...
@@ -463,8 +482,60 @@
             </div>
           </details>
         </div>
-      </div>
-    </div>
+
+        <!-- card 4 -->
+        <div class="col-md-4">
+          <details class="service-expandable">
+            <summary>
+              <img src="images/decor.svg" class="card-decor" alt="decor">
+              <img src="images/Makkah_icon.svg" alt="وسم" class="tag-icon">
+              دافعي العربات
+              <i class="ri-arrow-down-s-line"></i>
+            </summary>
+            <div class="expand-card-content">
+              <div class="tags">
+                <img src="images/Makkah_icon.svg" alt="وسم" class="tag-icon">
+              </div>
+              <p>
+              خدمة إلكترونية تتيح التقديم على طلب تصريح لدافع عربة يدوية في المسجد الحرام، بهدف تنظيم...
+              </p>
+              <div class="buttons">
+                <a href="#" class="btn btn-start">بدء الخدمة</a>
+                <a href="#" class="btn btn-details">تفاصيل الخدمة</a>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- card 5 -->
+        <div class="col-md-4">
+          <details class="service-expandable">
+            <summary>
+              <img src="images/decor.svg" class="card-decor" alt="decor">
+              <img src="images/Makkah_icon.svg" alt="وسم" class="tag-icon">
+              المطوف الرقمي 
+              <i class="ri-arrow-down-s-line"></i>
+            </summary>
+            <div class="expand-card-content">
+              <div class="tags">
+                <img src="images/Makkah_icon.svg" alt="وسم" class="tag-icon">
+              </div>
+              <p>
+               خدمة إلكترونية توفر مساعدًا رقميًا يضم أكثر من 170 دعاءً نصيًا ومسموعًا، مع ميزة عدّ الأشواط...
+              </p>
+              <div class="buttons">
+                <a href="#" class="btn btn-start">بدء الخدمة</a>
+                <a href="#" class="btn btn-details">تفاصيل الخدمة</a>
+              </div>
+            </div>
+          </details>
+        </div>
+
+      </div> <!-- row -->
+
+    </div> <!-- services-block -->
+
+  </div> <!-- container -->
 </section>
 
 
@@ -563,6 +634,8 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/memory.js"></script>
   <script src="js/hero.js"></script>
   <script src="js/services.js"></script>

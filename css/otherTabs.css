@@ -1,3 +1,36 @@
+/* ===============================
+   تبويبات معالم المسجد النبوي
+   =============================== */
+.other-tabs-wrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.other-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 25px;
+  border-radius: 10px;
+  background: #fff;
+  font-weight: 600;
+  border: 1.5px solid #bb9661;
+  cursor: pointer;
+  transition: 0.25s ease;
+  color: var(--dark-gray, #1e1e1e);
+}
+
+.other-tab.active {
+  background: #bb9661;
+  color: #fff;
+}
+
+/* ===============================
+   سكشن المعالم (كما أرسلته حرفيًا)
+   =============================== */
 .other-services {
   background-color: var(--bg-main, #f9f9f9);
   padding: 1rem 1rem;
@@ -25,7 +58,7 @@
 
   min-height: 350px;
   width: 90%;
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto 2rem auto;
   box-sizing: border-box;
 }
@@ -61,3 +94,22 @@
   margin: 0;
   overflow-wrap: anywhere;
 }
+
+/* ===============================
+   تحسين بسيط للموبايل (اختياري)
+   =============================== */
+@media (max-width: 576px) {
+  .other-services-card {
+    min-height: auto;
+  }
+
+  .other-services-card img {
+    height: 200px;
+  }
+
+  .other-services .section-title {
+    font-size: 1.6rem;
+  }
+}
+
+

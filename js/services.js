@@ -1,22 +1,39 @@
+// ====== Tabs (خدمات الزوار / خدمات الطلاب) ======
 const tabs = document.querySelectorAll('.service-tab');
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
 
-        const target = tab.getAttribute('data-target');
-        document.querySelectorAll('.services-block').forEach(block => {
-          if (block.id === target) block.style.display = '';
-          else block.style.display = 'none';
-        });
-      });
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+
+    // تفعيل التبويب
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+
+    const target = tab.getAttribute('data-target');
+
+    // إظهار القسم المطلوب وإخفاء البقية
+    document.querySelectorAll('.services-block').forEach(block => {
+      if (block.id === target) {
+        block.style.display = '';
+      } else {
+        block.style.display = 'none';
+      }
     });
 
+    // 🔥 إعادة حساب Slick بعد إظهار التبويب
+    setTimeout(() => {
+      $('#' + target).find('.services-slider').slick('setPosition');
+    }, 200);
+  });
+});
+
+
+// ====== Slick Slider ======
 $(document).ready(function(){
   $('.services-slider').each(function(){
     var $slider = $(this);
     var slideCount = $slider.children().length;
-    if(slideCount <= 1) return; // لو كرت واحد فقط، لا تفعل السلايدر
+
+    if(slideCount <= 1) return;
 
     if(typeof $slider.slick === "function") {
       $slider.slick({
@@ -25,13 +42,25 @@ $(document).ready(function(){
         dots: true,
         arrows: false,
         infinite: false,
-        rtl: $('html').attr('dir') === 'rtl', // يحترم اتجاه الصفحة
+        rtl: $('html').attr('dir') === 'rtl',
         responsive: [
-          { breakpoint: 992, settings: { slidesToShow: Math.min(2, slideCount) } },
-          { breakpoint: 576, settings: { slidesToShow: 1 } }
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: Math.min(2, slideCount)
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1
+            }
+          }
         ]
       });
     }
   });
 });
+
+
 
