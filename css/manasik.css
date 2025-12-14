@@ -1,4 +1,3 @@
-/* الصورة داخل قسم المناسك */
 .manasik-image {
   width: 100%;
   max-width: 100%;
@@ -8,7 +7,6 @@
   margin: 0 auto;
 }
 
-/* تنسيق الكونتينر والقسم */
 .manasik,
 .manasik .container {
   width: 100%;
@@ -17,7 +15,7 @@
   display: block;
 }
 
-/* الروابط */
+
 .manasik .container a,
 .manasik-link {
   max-width: 100%;
@@ -25,11 +23,6 @@
   overflow: hidden;
 }
 
-/* ================================================== */
-/*                ريسبونسف لجميع الشاشات             */
-/* ================================================== */
-
-/* موبايل */
 @media (max-width: 576px) {
   .manasik-image {
     width: 100%;
@@ -37,7 +30,6 @@
   }
 }
 
-/* تابلت */
 @media (min-width: 577px) and (max-width: 991px) {
   .manasik-image {
     width: 100%;
@@ -45,7 +37,6 @@
   }
 }
 
-/* لابتوب */
 @media (min-width: 992px) and (max-width: 1399px) {
   .manasik-image {
     width: 100%;
@@ -53,7 +44,6 @@
   }
 }
 
-/* شاشات كبيرة جداً */
 @media (min-width: 1400px) {
   .manasik-image {
     width: 100%;

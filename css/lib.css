@@ -1,4 +1,3 @@
-/* الأساسيات */
 .library-section {
   direction: rtl; 
   position: relative;
@@ -31,7 +30,6 @@
   margin: 0 auto;
 }
 
-/* زر */
 .library-btn-wrapper {
   text-align: left;     
   direction: ltr;       
@@ -54,7 +52,6 @@
   transform: translateY(-2px);
 }
 
-/* الصورة */
 .library-image {
   border-radius: 12px;
   width: 100%;
@@ -66,28 +63,25 @@
   transform: scale(1.03);
 }
 
-/* ================================================== */
-/*   تداخل النص مع الصورة (شاشات لابتوب وما فوق)    */
-/* ================================================== */
 
 @media (min-width: 992px) {
 
   .library-text-box {
-    border: 1px solid #bb9661;   /* إطار ذهبي */
-    border-left: none;           /* إخفاء الضلع الأيسر */
+    border: 1px solid #bb9661;
+    border-left: none; 
     border-radius: 16px;
     padding: 30px 35px;
     background: #fff;
     position: relative;
     z-index: 2;
-    margin-left: -50%;          /* ✨ التداخل مع الصورة */
+    margin-left: -50%;
     max-width: 520px;
   }
 
   .library-image {
     position: relative;
     z-index: 3;
-    margin-right: -35%;        /* ✨ تداخل عكسي */
+    margin-right: -35%;
     max-width: 500px;
   }
 }

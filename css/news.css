@@ -116,7 +116,7 @@
   display: inline-block;
   width: 80px;
   height: 40px;
-  margin-top: auto;  /* ⬅ يبقي الزر بأسفل */
+  margin-top: auto;
   padding: 0.3rem 0.6rem;
   background-color: #bb9661;
   color: #fff;

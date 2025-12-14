@@ -24,7 +24,7 @@ const lightboxSwiper = new Swiper('.lightbox-swiper', {
 galleryImages.forEach((img, index) => {
   img.addEventListener("click", () => {
     lightbox.style.display = "flex";
-    lightboxSwiper.slideToLoop(index, 0); // يعرض الصورة الصحيحة
+    lightboxSwiper.slideToLoop(index, 0);
   });
 });
 
