@@ -1,0 +1,12 @@
+#dynamicBreadcrumb {
+  color: #fff !important;
+  padding-right: 6px;
+  margin-right: 0;
+  white-space: nowrap;
+}
+
+#dynamicBreadcrumb a,
+#dynamicBreadcrumb span {
+  color: #e4e7ea !important;
+
+}

@@ -1,6 +1,8 @@
 .library-section {
   direction: rtl; 
   position: relative;
+  background-color: rgba(208, 216, 221, 0.20); 
+  padding: 20px 0; 
 }
 
 .library-text {

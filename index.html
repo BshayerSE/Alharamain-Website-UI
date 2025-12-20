@@ -23,12 +23,14 @@
   <link rel="stylesheet" href="css/hero.css" />
   <link rel="stylesheet" href="css/services.css" />
   <link rel="stylesheet" href="css/news.css" />
+  <link rel="stylesheet" href="css/care.css" />
   <link rel="stylesheet" href="css/memory.css" />
   <link rel="stylesheet" href="css/footer.css" />
   <link rel="stylesheet" href="css/pattern.css" />
   <link rel="stylesheet" href="css/gallery.css" />
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/statistics.css" />
+
 
 
 </head>
@@ -120,19 +122,6 @@
     <div class="swiper heroSwiper">
       <div class="swiper-wrapper">
 
-        <!-- شريحة اليوم الوطني -->
-        <div class="swiper-slide">
-          <div class="hero-slide border rounded-4 overflow-hidden shadow-sm position-relative">
-            <img src="images/national_day.png" class="w-100" alt="اليوم الوطني" />
-
-            <!-- النص فوق الصورة -->
-            <div class="national-day-text hero-content">
-              <h1>اليوم الوطني السعودي 95</h1>
-              <p>نحتفي بمرور 95 عامًا من العز والفخر لوطننا</p>
-            </div>
-          </div>
-        </div>
-
         <!-- شريحة المسجد الحرام -->
         <div class="swiper-slide">
           <div class="hero-slide border rounded-4 overflow-hidden shadow-sm position-relative">
@@ -176,9 +165,6 @@
   </div>
 </section>
 
-<div class="decorative-pattern">
-  <img src="images/pattren.png" alt="pattern ">
-</div>
 
 
   <!-- ======= تبويبات (خدمات الزوار / خدمات الطلاب) ======= -->
@@ -187,7 +173,7 @@
     <div class="service-tab" data-target="studentsServices" role="tab" aria-selected="false">خدمات الطلاب</div>
   </div>
 
-<section class="discover py-4 pt-3">
+<section class="discover py-4 pt-3 mb-3">
   <div class="container">
 
     <!-- قسم الزوار -->
@@ -312,7 +298,7 @@
                 <img src="images/madinah_icon.svg" alt="وسم" class="tag-icon">
               </div>
               <p>
-                منصة إلكترونية لتنظيم زيارات معارض الحرمين الشريفين، بتجربة ثرية وملهمة تعزز الوعي الثقافي والمعرفي...
+                منصة إلكترونية لتنظيم زيارات معارض الحرمين الشريفين، بتجربة ثرية وملهمة تعزز الوعي الثقافي والمعرفي (أحجز زيارتك الآن)...
               </p>
               <div class="buttons">
                 <a href="#" class="btn btn-start">بدء الخدمة</a>
@@ -427,15 +413,16 @@
     
   </div>
 </div>
+
+  <div class="py-4 d-flex justify-content-start">
+    <a href="#" class="readMore-btn"><i class="ri-arrow-left-line"></i></a>
+  </div>
+
 </section>
 
-<!-- pattern  -->
-<div class="decorative-pattern">
-  <img src="images/pattren.png" alt="pattern ">
-</div>
 
 <!-- news.html -->
-<section class="news-section p-0">
+<section class="news-section p-0 ">
   <div class="container-fluid px-0">
     <h2 class="section-title mb-4 text-center">آخر الأخبار</h2>
 
@@ -443,31 +430,70 @@
     <div class="swiper newsSwiper">
       <div class="swiper-wrapper">
 
-        <!-- خبر 1 -->
+
+        <!-- خبر -->
+        <div class="swiper-slide">
+          <article class="news-card">
+            <img src="images/news5.jpg" alt="وفد مجلس الشورى يزور معرض عمارة الحرمين الشريفين ومجمع الملك عبد العزيز لصناعة كسوة الكعبة المشرفة">
+            <div class="news-content">
+              <h5>وفد مجلس الشورى يزور معرض عمارة الحرمين الشريفين ومجمع الملك عبد العزيز لصناعة كسوة...</h5>
+              <p> استقبلت الهيئة العامة للعناية بشؤون المسجد الحرام والمسجد النبوي وفدًا من مجلس الشورى، وذلك ضمن زيارة رسمية هدفت إلى الاطلاع على عدد من المبادرات والمشروعات التي تضطلع بها الهيئة في مجالات العناية بالحرمين الشريفين، وإبراز تاريخهما العمراني، وتعزيز التجربة المعرفية لزائريهما....</p>
+              <div class="news-date">
+                <p>2025/12/16</p>
+              </div>
+              <a href="shura-council-news.html" class="read-more-news-btn">اقرأ المزيد</a>
+            </div>
+          </article>
+        </div>  
+
+        <!-- خبر -->
+        <div class="swiper-slide">
+          <article class="news-card">
+            <img src="images/news6.jpg" alt="نائب المحافظ لسياسات التدريب والجودة يزور مركز الحرمين الشريفين للتدريب ومصنع كسوة الكعبة">
+            <div class="news-content">
+              <h5>نائب المحافظ لسياسات التدريب والجودة يزور مركز الحرمين الشريفين للتدريب ومصنع كسوة الكعبة.</h5>
+              <p>زار نائب المحافظ لسياسات التدريب والجودة المهندس صالح الحوشاني مركز الحرمين الشريفين للتدريب ومصنع كسوة الكعبة المشرّفة...</p>
+              <div class="news-date">
+                <p>2025/12/15</p>
+              </div>
+              <a href="#.html" class="read-more-news-btn">اقرأ المزيد</a>
+            </div>
+          </article>
+        </div>  
+
+        <!-- خبر -->
         <div class="swiper-slide">
           <article class="news-card">
             <img src="images/news1.jpeg" alt="إحصائية عدد زوار الحرمين">
             <div class="news-content">
               <h5>الهيئة العامة للعناية بشؤون الحرمين تعلن إحصائية عدد زوار الحرمين </h5>
-              <p>أعلنت الهيئة العامة للعناية بشؤون الحرمين الشريفين أن إجمالي عدد زوار الحرمين الشريفين خلال الفترة من 27 ربيع الأول إلى 3 ربيع الآخر 1447هـ بلغ...</p>
+              <p>أعلنت الهيئة العامة للعناية بشؤون الحرمين الشريفين أن إجمالي عدد زوار الحرمين الشريفين خلال الفترة من 27 ربيع
+                الأول إلى 3 ربيع الآخر 1447هـ بلغ...</p>
+            
+              <div class="news-date">
+                <p>2025/9/28</p>
+              </div>
               <a href="#" class="read-more-news-btn">اقرأ المزيد</a>
             </div>
-          </article>
+            </article>
         </div>
 
-        <!-- خبر 2 -->
+        <!-- خبر -->
         <div class="swiper-slide">
           <article class="news-card">
             <img src="images/news2.jpg" alt="خدمات نوعية">
             <div class="news-content">
               <h5>الحرمين الشريفين.. خدمات نوعية تعكس مسيرة الإنجاز في اليوم الوطني</h5>
               <p>في مناسبة اليوم الوطني للمملكة العربية السعودية تستعرض الهيئة العامة للعناية بشؤون المسجد الحرام والمسجد النبوي جملة من الخدمات النوعية التي تعكس...</p>
+              <div class="news-date">
+                <p>2025/9/22</p>
+              </div>
               <a href="#" class="read-more-news-btn">اقرأ المزيد</a>
             </div>
           </article>
         </div>
 
-        <!-- خبر 3 -->
+        <!-- خبر -->
         <div class="swiper-slide">
           <article class="news-card">
             <img src="images/news3.jpg" alt="الرواق السعودي ">
@@ -479,13 +505,16 @@
           </article>
         </div>
 
-        <!-- خبر 4 -->
+        <!-- خبر -->
         <div class="swiper-slide">
           <article class="news-card">
             <img src="images/news4.jpg" alt="احصائية زوار الحرمين">
             <div class="news-content">
               <h5>12.4 مليون زائر للحرمين الشريفين في أسبوع واحد</h5>
               <p>سجّلت الهيئة العامة للعناية بشؤون المسجد الحرام والمسجد النبوي إحصائية أعداد زوّار الحرمين الشريفين حيث...</p>
+              <div class="news-date">
+                <p>2025/8/15</p>
+              </div>
               <a href="#" class="read-more-news-btn">اقرأ المزيد</a>
             </div>
           </article>
@@ -496,14 +525,15 @@
       <!-- أزرار التنقل المخصصة لسوايبر الأخبار -->
       <div class="swiper-button-prev news-prev"></div>
       <div class="swiper-button-next news-next"></div>
-    </div>
+      </div>
+
+
+  </div>
+  <div class="py-4 d-flex justify-content-start">
+    <a href="#" class="readMore-btn"><i class="ri-arrow-left-line"></i></a>
   </div>
 </section>
 
-<!-- pattern  -->
-<div class="decorative-pattern">
-  <img src="images/pattren.png" alt="pattern ">
-</div>
 
 <!-- ذاكرة الحرمين -->
 <section class="memory py-4 bg-light">
@@ -549,11 +579,6 @@
     <div class="swiper-button-next lightbox-button-next"></div>
     <div class="swiper-button-prev lightbox-button-prev"></div>
   </div>
-</div>
-
-<!-- pattern  -->
-<div class="decorative-pattern">
-  <img src="images/pattren.png" alt="pattern ">
 </div>
 
 <!-- ======= قسم الإحصائيات  ======= -->
@@ -634,12 +659,10 @@
 </section>
 
 
-<!-- pattern  -->
-<div class="decorative-pattern">
-  <img src="images/pattren.png" alt="pattern ">
-</div>
 
 <div class="gold-line-footer"></div>
+
+<p id="last-updated"></p>
 
 
 <!-- ======= Footer ======= -->
@@ -739,5 +762,6 @@
   <script src="js/activepage.js"></script>
   <script src="js/breadcrumb.js"></script>
   <script src="js/header.js"></script>
+  <script src="js/lastUpdate.js"></script>
 </body>
 </html>

@@ -3,12 +3,21 @@
   position: relative;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  
 }
 
 .news-section .section-title {
   color: var(--dark-gray, #1e1e1e);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 2rem;
+}
+
+.moreNewsTitle {
+  color: var(--dark-gray);
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: start;
+  margin-right: 75px;
 }
 
 /* Swiper Container */
@@ -33,23 +42,6 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 576px) {
-  .news-card {
-    min-height: 380px;
-  }
-}
-
-@media (min-width: 577px) and (max-width: 992px) {
-  .news-card {
-    min-height: 420px;
-  }
-}
-
-@media (min-width: 993px) {
-  .news-card {
-    min-height: 450px;
-  }
-}
 
 .news-card:hover {
   transform: translateY(-5px);
@@ -65,13 +57,6 @@
   margin: 0.75rem auto 0;
   border-radius: 10px;
 }
-
-@media (max-width: 576px) {
-  .news-card img {
-    height: 200px;
-  }
-}
-
 
 .news-content {
   flex-grow: 1;
@@ -104,13 +89,23 @@
   line-height: 1.6;
   margin: 0;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
+
+.news-date {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2px;                
+  font-size: 0.85rem;    
+  padding-right: 9px; 
+}
+
 
 .read-more-news-btn {
   display: inline-block;
@@ -120,7 +115,7 @@
   padding: 0.3rem 0.6rem;
   background-color: #bb9661;
   color: #fff;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
@@ -131,6 +126,29 @@
 }
 
 .read-more-news-btn:hover {
+  background-color: #a8834f;
+  transform: translateY(-1px);
+}
+
+.readMore-btn {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  background-color: #bb9661;
+  color: #fff;
+  text-align: center !important;
+  text-decoration: none;
+  border-radius: 4px;
+  line-height: 30px;
+}
+
+.py-4.d-flex {
+  justify-content: flex-start; 
+  padding-left: 30px;
+}
+
+
+.all-news-btn:hover {
   background-color: #a8834f;
   transform: translateY(-1px);
 }
@@ -158,3 +176,106 @@
   color: #fff;
 }
 
+/* NEWS PHOTOS BASE */
+
+.news-photos-wrapper {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto; 
+  padding-left: clamp(10px, 4vw, 40px);
+  padding-right: clamp(10px, 4vw, 40px);
+  position: relative;
+}
+
+.news-photos-slide {
+  width: 100%;
+  height: clamp(220px, 40vw, 420px);
+  overflow: hidden;
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(187, 150, 97, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-photos-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  display: block;
+}
+
+.news-icon { 
+  width: 18px;
+  height: 18px;
+  margin-bottom: 0;
+  filter: brightness(0) saturate(100%) invert(75%) sepia(28%) saturate(828%) hue-rotate(355deg) brightness(65%) contrast(87%);
+  opacity: 0.8;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.news-icon:hover {
+  opacity: 1;
+}
+
+.bookmark-button.active .news-icon.bookmark {
+  filter: brightness(0) saturate(100%)
+  invert(55%) sepia(18%) saturate(950%)
+  hue-rotate(355deg) brightness(45%) contrast(115%);
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .news-photos-slide {
+    height: clamp(180px, 35vw, 320px);
+  }
+}
+
+@media (max-width: 576px) {
+
+  /* Photos slider */
+  .news-photos-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .news-photos-slide {
+    height: clamp(150px, 45vw, 250px);
+  }
+
+  /* News card */
+  .news-card {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .newsSwiper {
+    padding: 1rem;
+  }
+
+  .news-card img {
+    width: 100%;
+    height: 180px;
+    margin: 0;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .news-content h5 {
+    font-size: 1rem;
+  }
+
+  .news-content p {
+    font-size: 0.9rem;
+  }
+}
+
+/* TABLET */
+@media (min-width: 577px) and (max-width: 992px) {
+  .news-card {
+    min-height: 420px;
+  }
+}

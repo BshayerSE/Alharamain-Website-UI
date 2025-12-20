@@ -17,7 +17,6 @@ var lightboxSwiper = new Swiper('.lightbox-swiper', {
   },
 });
 
-// عناصر الـLightbox
 const lightbox = document.getElementById("lightbox");
 const closeBtn = document.querySelector(".lightbox .close");
 

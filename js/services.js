@@ -1,4 +1,3 @@
-// ====== Tabs (خدمات الزوار / خدمات الطلاب) ======
 const tabs = document.querySelectorAll('.service-tab');
 
 tabs.forEach(tab => {
@@ -19,7 +18,6 @@ tabs.forEach(tab => {
       }
     });
 
-    // 🔥 إعادة حساب Slick بعد إظهار التبويب
     setTimeout(() => {
       $('#' + target).find('.services-slider').slick('setPosition');
     }, 200);
@@ -53,7 +51,7 @@ $(document).ready(function(){
           {
             breakpoint: 576,
             settings: {
-              slidesToShow: 1
+              slidesToShow: 3
             }
           }
         ]
